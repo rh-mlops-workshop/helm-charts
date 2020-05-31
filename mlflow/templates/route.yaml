@@ -1,0 +1,19 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: {{ include "mlflow.fullname" . }}         
+    {{- include "mlflow.selectorLabels" . | nindent 4 }}
+  name: {{ include "mlflow.fullname" . }}
+spec:
+  port:
+    targetPort: 8080-tcp
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: {{ include "mlflow.fullname" . }}
+    weight: 100
+  wildcardPolicy: None
