@@ -11,4 +11,19 @@ entries:
     urls:
     - https://github.com/tsailiming/helm-charts/releases/download/mlflow-0.1.0/mlflow-0.1.0.tgz
     version: 0.1.0
+  nexus:
+  - apiVersion: v2
+    appVersion: 3.24.0
+    created: "2020-07-03T12:39:14.357517+08:00"
+    dependencies:
+    - name: sonatype-nexus
+      repository: https://oteemo.github.io/charts/
+      version: 2.1.0
+    description: A Helm chart for deploying Sonatype Nexus
+    digest: c936ee2361d02d36bb6c85ec2ccaea321c88a10df4867c7ea98f4d25e44d9549
+    name: nexus
+    type: application
+    urls:
+    - https://github.com/tsailiming/helm-charts/releases/download/nexus-0.1.0/nexus-0.1.0.tgz
+    version: 0.1.0
 generated: "2020-06-03T13:25:52.894984+08:00"
