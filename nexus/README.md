@@ -7,7 +7,8 @@ The values file contained in this repository allows us to deploy the following:
 - Nexus at a given version  (currently default of 3.22.1)
 - Deploys the Nexus Kubernetes plugin which allows us to configure Nexus with a series of ConfigMaps
 - By default, configures Nexus with the Red Hat and JBoss Maven repositories
-- Configures a docker registry on port 5000
+- Configure a docker registry on port 5000
+- Configure a pypi proxy
 
 Any of these values can be changed or extended by adding or removing values from the provided values.yaml
 

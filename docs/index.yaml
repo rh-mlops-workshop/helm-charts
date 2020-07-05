@@ -14,6 +14,20 @@ entries:
   nexus:
   - apiVersion: v2
     appVersion: 3.24.0
+    created: "2020-07-05T12:43:48.266159+08:00"
+    dependencies:
+    - name: sonatype-nexus
+      repository: https://oteemo.github.io/charts/
+      version: 2.1.0
+    description: A Helm chart for deploying Sonatype Nexus
+    digest: 9b2ee140963a0fb72b200a6a92f54b53dda8f2c3ed90b7811d6f82eb78a00eab
+    name: nexus
+    type: application
+    urls:
+    - https://github.com/tsailiming/helm-charts/releases/download/nexus-0.1.1/nexus-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 3.24.0
     created: "2020-07-03T12:39:14.357517+08:00"
     dependencies:
     - name: sonatype-nexus

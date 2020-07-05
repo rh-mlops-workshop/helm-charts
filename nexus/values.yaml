@@ -73,6 +73,14 @@ sonatype-nexus:
         v1Enabled: 'true'
         writePolicy: 'ALLOW'
         forceBasicAuth: 'true'
+    - name: pypi
+      labels:
+        nexus-type: repository
+      data:
+        recipe: 'PyPiProxy'
+        remoteUrl: 'https://pypi.org'
+        blobStoreName: 'default'
+        strictContentTypeValidation: 'true'
   deployment:
     annotations: {}
     initContainers:
