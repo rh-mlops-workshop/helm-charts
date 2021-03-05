@@ -9,7 +9,7 @@ entries:
     name: mlflow
     type: application
     urls:
-    - https://github.com/tsailiming/helm-charts/releases/download/mlflow-0.1.0/mlflow-0.1.0.tgz
+    - https://github.com/rh-mlops-workshop/helm-charts/releases/download/mlflow-0.1.0/mlflow-0.1.0.tgz
     version: 0.1.0
   nexus:
   - apiVersion: v2
@@ -24,7 +24,7 @@ entries:
     name: nexus
     type: application
     urls:
-    - https://github.com/tsailiming/helm-charts/releases/download/nexus-0.1.1/nexus-0.1.1.tgz
+    - https://github.com/rh-mlops-workshop/helm-charts/releases/download/nexus-0.1.1/nexus-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 3.24.0
@@ -38,6 +38,6 @@ entries:
     name: nexus
     type: application
     urls:
-    - https://github.com/tsailiming/helm-charts/releases/download/nexus-0.1.0/nexus-0.1.0.tgz
+    - https://github.com/rh-mlops-workshop/helm-charts/releases/download/nexus-0.1.0/nexus-0.1.0.tgz
     version: 0.1.0
 generated: "2020-06-03T13:25:52.894984+08:00"
